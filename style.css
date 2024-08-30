@@ -96,16 +96,17 @@ header {
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
+    background: center/cover url("./images/Image\ \(5\).png");
 }
 
-.header{
+.header {
     width: 100%;
     height: 100%;
     position: absolute;
     background: center/cover url("./images/Background.png");
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 header .left {
@@ -117,7 +118,7 @@ header .left {
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    padding: 0px 10%;
+    padding: 0px 8%;
 }
 
 .left span {
@@ -145,6 +146,18 @@ header .left {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.left button:hover {
+    background: #274C5B;
+    color: #ffe761;
+}
+
+.left button:hover i {
+    background: #ffe761;
+    color: #274C5B;
 }
 
 .left button i {
@@ -156,13 +169,7 @@ header .left {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.right {
-    width: 50%;
-    height: 100%;
-    background: center/cover url("./images/Image\ \(5\).png");
-    background-position: right;
+    transition: 0.3s;
 }
 
 .natural-offer {
@@ -313,6 +320,18 @@ header .left {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.right-text button:hover {
+    background: #ffe761;
+    color: #274C5B;
+}
+
+.right-text button:hover i {
+    background: #274C5B;
+    color: #ffe761;
 }
 
 .right-text button i {
@@ -322,6 +341,7 @@ header .left {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
 .categories {
@@ -482,7 +502,7 @@ header .left {
     color: gold;
 }
 
-.categories > button{
+.categories>button {
     width: 150px;
     height: 50px;
     background: #274C5B;
@@ -493,13 +513,711 @@ header .left {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-.categories > button i{
+.categories>button:hover {
+    color: #274C5B;
+    background: #ffe761;
+}
+
+.categories>button:hover i {
+    color: #ffe761;
+    background: #274C5B;
+}
+
+.categories>button i {
+    transition: 0.3s;
     padding: 3px;
     background: #3a6b7e;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.testimonial {
+    width: 70%;
+    height: auto;
+    padding: 80px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    background: center/cover url("./images/Background\ \(1\).png");
+}
+
+.testimonial span {
+    font-family: "Qwitcher Grypen";
+    font-weight: 600;
+    font-size: 30px;
+    color: #10a35e;
+}
+
+.testimonial h1 {
+    color: #274C5B;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.mySwiper {
+    width: 100%;
+}
+
+swiper-slide img-star {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+swiper-slide img-star img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.starr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: gold;
+}
+
+swiper-slide p {
+    padding: 0px 100px;
+    color: #767676;
+}
+
+swiper-slide h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #274C5B;
+}
+
+swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.flex-activs {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.activ-child {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #10a35e;
+    color: #274C5B;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activ-child h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.activ-child p {
+    font-size: 14px;
+}
+
+.header-offer {
+    width: 84%;
+    height: auto;
+    padding: 100px 8%;
+    background: #274C5B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.header-offer span {
+    font-family: "Qwitcher Grypen";
+    font-size: 30px;
+    font-weight: 600;
+    color: #10a35e;
+    margin-left: 80px;
+}
+
+.header-offer h1 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 80px;
+}
+
+.text-button button {
+    padding: 15px 25px;
+    background: #ffe761;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #274C5B;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.text-button button:hover {
+    background: #274C5B;
+    color: #ffe761;
+}
+
+.text-button button:hover i {
+    background: #ffe761;
+    color: #274C5B;
+}
+
+.teext-button button:hover {
+    background: #274C5B;
+    color: #ffe761;
+}
+
+.teext-button button:hover i {
+    background: #ffe761;
+    color: #274C5B;
+}
+
+.text-button button i {
+    padding: 3px;
+    font-size: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #274C5B;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.header-offer .text-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center-imgg1 {
+    width: 100%;
+    height: 50%;
+    background: center/cover url("./images/Photo\ \(9\).png");
+}
+
+.center-imgg2 {
+    width: 100%;
+    height: 50%;
+    background: center/cover url("./images/Photo\ \(10\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.center-imgg3 {
+    width: 100%;
+    height: 50%;
+    background: center/cover url("./images/Photo\ \(11\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.center-imgg4 {
+    width: 100%;
+    height: 50%;
+    background: center/cover url("./images/Photo\ \(12\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cars {
+    box-shadow: 0px 0px 0px;
+    border-radius: 15px;
+}
+
+.cars-bottom {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cars-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.eco-friendly {
+    word-wrap: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eco-friendly img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eco {
+    width: 35%;
+    height: 85%;
+    border-radius: 30px;
+    background: #fff;
+    transform: translateX(-200px);
+    padding: 0px 0px 0px 4%;
+    color: #274C5B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.eco span {
+    font-family: "Qwitcher Grypen";
+    font-size: 30px;
+    font-weight: 600;
+    color: #10a35e;
+}
+
+.eco h1 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.text-childs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.text-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.text-child h4 {
+    font-weight: 600;
+}
+
+.text-child p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.organic {
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+    background: #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.organic-food {
+    width: 32%;
+    height: 400px;
+    background: center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.organic-food button {
+    width: 180px;
+    height: 50px;
+    background: #fff;
+    color: #274C5B;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.food1 {
+    background: center/cover url("./images/Photo\ \(1\).jpg");
+}
+
+.food2 {
+    background: center/cover url("./images/Photo\ \(2\).jpg");
+}
+
+.food3 {
+    background: center/cover url("./images/Photo\ \(3\).jpg");
+}
+
+.news {
+    width: 70%;
+    padding: 80px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.news>span {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Qwitcher Grypen";
+    color: #10a35e;
+}
+
+.news .teext-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teext-button h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #274C5B;
+    padding: 0px 200px 0px 0px;
+    line-height: 40px;
+}
+
+.teext-button button {
+    width: 250px;
+    height: 60px;
+    border: 2px solid #274C5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border-radius: 10px;
+    color: #274C5B;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.teext-button i {
+    padding: 2px;
+    background: #274C5B;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.flex-nov {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.d-vitamin {
+    width: 49%;
+    height: 300px;
+    background: center/cover url("./images/Image\ \(1\).jpg");
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 30px 0px;
+}
+
+.c-vitamin {
+    width: 49%;
+    height: 300px;
+    background: center/cover url("./images/Photo\ \(14\).png");
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 30px 0px;
+}
+
+.nov {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #274C5B;
+}
+
+.nov h3 {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vitamin-d {
+    width: 92%;
+    height: 200px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #8d8d8d;
+    transform: translateY(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 0px 0px 0px 8%;
+}
+
+.vitamin-d p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #274C5B;
+}
+
+.vitamin-d p i {
+    color: #ebdb2a;
+    font-size: 16px;
+}
+
+.vitamin-d h3 {
+    font-weight: 700;
+    font-size: 17px;
+    color: #274C5B;
+}
+
+.vitamin-d span {
+    font-size: 13px;
+    color: #274C5B;
+}
+
+.vitamin-d button {
+    width: 150px;
+    height: 50px;
+    background: #ffe761;
+    color: #274C5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.vitamin-d button i {
+    color: #fff;
+    background: #274C5B;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.subscribe {
+    width: 70%;
+    padding: 50px 15%;
+}
+
+.subscribe>div {
+    width: 90%;
+    height: 200px;
+    background: center/cover url("./images/Image\ \(6\).png");
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+}
+
+.subscribe-background h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0px 200px 0px 0px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs input {
+    width: 250px;
+    height: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-indent: 15px;
+    font-style: italic;
+}
+
+.inputs button {
+    width: 150px;
+    height: 50px;
+    background: #274C5B;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact {
+    width: 70%;
+    padding: 50px 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.contactUs {
+    width: 30%;
+    padding: 0px 3% 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border-right: 1px solid #ccc;
+    gap: 15px;
+    text-align: end;
+}
+
+.contactUs h3 {
+    font-weight: 600;
+    color: #274C5B;
+}
+
+.contactUs span {
+    font-size: 15px;
+    color: #274C5B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.contactUs span a {
+    text-decoration: none;
+    color: #274C5B;
+    font-size: 13px;
+}
+
+.organick {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.organick img {
+    width: 150px;
+    object-fit: cover;
+}
+
+.organick p {
+    font-size: 13px;
+    color: #767676;
+}
+
+.organick .iconss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconss i {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #82c1ff13;
+    color: #274C5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0px 0px 0px 3%;
+    border-left: 1px solid #ccc;
+}
+
+.pages h3 {
+    color: #274C5B;
+    font-weight: 600;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #274C5B;
+    font-size: 13px;
+}
+
+.victor {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.victor h4 {
+    font-size: 15px;
+    color: #274C5B;
+    font-weight: 400;
 }
